@@ -10,10 +10,10 @@ class topic(object):
         self.task_list = []
         self.duration = None
         self.notes = None
-        setask_def = [self.task_list, self.duration, self.notes]
+        ask_def = [self.task_list, self.duration, self.notes]
 
     def add_task(self, topic, new_task):
-        new_task = input("What is the name of the new task")
+        #new_task = input("What is the name of the new task")
         applicationMap.m_user.topics[topic] = applicationMap.m_user.new_topic_def.task_list
         new_task = task()
         applicationMap.m_user.topics[topic].append(new_task)

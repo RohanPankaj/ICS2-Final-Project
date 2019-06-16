@@ -23,3 +23,12 @@ class user(object):
             return False
 
     def print_all(self): 
+        for topic in self.topics:
+            print(topic)
+            for key in self.topics.keys():
+                
+                for task in self.topics[key]:
+                    print(applicationMap.m_user.topics[key])
+                    print(task)
+                    print(task)
+                    print(task[0][0])
