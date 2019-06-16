@@ -22,13 +22,9 @@ class user(object):
             print("yay")
             return False
 
-    def print_all(self): 
+    def print_all(self):
         for topic in self.topics:
             print(topic)
             for key in self.topics.keys():
-                
                 for task in self.topics[key]:
-                    print(applicationMap.m_user.topics[key])
-                    print(task)
-                    print(task)
-                    print(task[0][0])
+                    print(task[0])

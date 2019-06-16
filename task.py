@@ -3,4 +3,8 @@ class task(object):
         self.task_list = []
         self.duration = None
         self.notes = None
-        self.task_def = [self.task_list, self.duration, self.notes]
+        self.task = None
+        self.task_def = []
+
+    def update_list(self):
+        self.task_def = [self.task, self.duration, self.notes]
