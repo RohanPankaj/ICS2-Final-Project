@@ -21,3 +21,5 @@ class user(object):
         if topic not in applicationMap.m_user.topics:
             print("yay")
             return False
+
+    def print_all(self): 
