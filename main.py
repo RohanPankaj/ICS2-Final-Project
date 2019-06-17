@@ -1,8 +1,5 @@
 import applicationMap
 
-
-
-
 print(applicationMap.introuction_prompt)
 print(applicationMap.instructions)
 
@@ -27,3 +24,5 @@ while True:
         applicationMap.m_user.delete_topic(u_topic)
     elif action == "print all":
         applicationMap.m_user.print_all()
+    elif action == "prioritize":
+        applicationMap.m_user.prioritize(applicationMap.m_user.topics)

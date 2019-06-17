@@ -2,25 +2,21 @@
 import user
 import applicationMap
 #import task
-from task import task
+#from task import task
 
 
 class topic(object):
+
     def __init__(self):
         self.task_list = []
-        self.duration = None
-        self.notes = None
-        self.task_def = [self.task_list, self.duration, self.notes]
 
     def add_task(self, topic, new_task):
-        #new_task = input("What is the name of the new task")
-        applicationMap.m_user.topics[topic] = applicationMap.m_user.new_topic_def.task_list
         
-        duration = input(
-            "How long to you estimate in minuets this task taking? ")
+        duration = int(input(
+            "How long to you estimate in minuets this task taking? (Enter your answer as an integer ie. 1)"))
         notes = input("Do you have any notes for this task")
-        applicationMap.m_user.topics[topic].append([new_task,duration, notes])
-        #print(applicationMap.m_user.topics[topic].update())
+        applicationMap.m_user.topics[topic].task_list.append([new_task,duration, notes])
+
     def delete_task(self, topic, new_task):
         applicationMap.m_user.topics[topic].remove(new_task)
 
